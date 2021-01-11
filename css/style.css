@@ -923,7 +923,8 @@ footer {
         height: 250px;
         position: relative;
         margin: 40px 0px;
-        z-index: 2
+        z-index: 2;
+        object-fit: cover;
     }
 
 }
