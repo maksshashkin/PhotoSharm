@@ -11,7 +11,7 @@ $(function () {
 
 		$("html, body").animate({
 			scrollTop: blockOffset
-		}, 2000);
+		}, 1500);
 	});
 
 
@@ -77,7 +77,7 @@ $(function () {
 	/*bady-arrow*/
 	const scrollBtn = $('.bady-arrow');
 
-	/*По скролу скрваем или показываем кнопку*/
+	/*По скролу скрываем или показываем кнопку*/
 	$(window).scroll(function () {
 		if ($(this).scrollTop() > 1200) {
 			scrollBtn.fadeIn();
@@ -89,7 +89,7 @@ $(function () {
 	scrollBtn.click(function () {
 		$('html, body').animate({
 			scrollTop: 0
-		}, 2000);
+		}, 1000);
 		return false;
 	})
 
@@ -124,10 +124,10 @@ $(function () {
 	const Slider2 = $(".slider2");
 	Slider2.owlCarousel({
 		items: 1,
-		smartSpeed: 2000,
+		smartSpeed: 1000,
 		dots: true,
 		autoplay: true,
-		autoplayTimeout: 8000,
+		autoplayTimeout: 7000,
 		autoplayHoverPause: true,
 		loop: true,
 
@@ -146,39 +146,17 @@ $(function () {
 	/* Slider 3*/
 	const Slider3 = $(".slider3");
 	Slider3.owlCarousel({
-		items: 4,
-		smartSpeed: 2000,
+		items: 3,
+		smartSpeed: 500,
 		//		autoplay: true,
 		//		autoplayTimeout: 8000,
 		//		autoplayHoverPause: true,
 		loop: true,
-		stagePadding: 80,
-		responsive: {
-			0: {
-				items: 1,
-				stagePadding: 25,
 
-			},
-			400: {
-				items: 1,
-				stagePadding: 50,
-
-			},
-			500: {
-				items: 1,
-				stagePadding: 70,
-
-			},
-			650: {
-				items: 1,
-				stagePadding: 120,
-
-			},
-			800: {
-				items: 2
-			},
-
-		}
+	});
+   $('#slider3_left').click(function () {
+		console.log('Left');
+		Slider3.trigger('prev.owl.carousel');
 	});
 
 	/* Modal-popup */
