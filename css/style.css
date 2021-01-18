@@ -327,7 +327,7 @@ header {
     z-index: 1;
     position: relative;
     object-fit: cover;
-    
+
 }
 
 .slider3 {
@@ -381,16 +381,17 @@ header {
     font-size: 25px;
     text-transform: uppercase;
     font-weight: bold;
-    
+    opacity: 0;
+    transition: 1s
 }
 
 
 .content-slider3:hover {
     opacity: 1;
-    
+
 }
 
-.content-slider3__btn{
+.content-slider3__btn {
     display: block;
     margin-top: 10px;
     padding: 10px;
@@ -926,6 +927,9 @@ footer {
         z-index: 2
     }
 
+    .wrapper-slider {
+        margin-top: 25px
+    }
 }
 
 @media screen and (max-width: 770px) {
@@ -1092,6 +1096,10 @@ footer {
     .portfolio {
         padding-bottom: 0
     }
+
+    .slider3__img {
+        height: 250px
+    }
 }
 
 @media screen and (max-width: 450px) {
@@ -1150,4 +1158,7 @@ footer {
         font-size: 30px
     }
 
+    .slider3__img {
+        height: 200px
+    }
 }
