@@ -152,6 +152,22 @@ $(function () {
 		//		autoplayTimeout: 8000,
 		//		autoplayHoverPause: true,
 		loop: true,
+        responsive: {
+            0: {
+                items: 1,
+                stagePadding: 25,
+			},
+			400: {
+				items: 1,
+                stagePadding: 40,
+			},
+            500: {
+				items: 2,
+			},
+			750: {
+
+			},
+		}
 
 	});
    $('#slider3_left').click(function () {
